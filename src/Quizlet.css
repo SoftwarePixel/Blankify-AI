@@ -1,0 +1,117 @@
+.root-quizlet-div {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  border: 0.22rem dashed rgba(62, 247, 118, 0.479);
+  border-radius: 1rem;
+  max-width: 50rem;
+}
+
+.root-quizlet-div h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.root-quizlet-div h3 {
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.root-quizlet-div button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  max-width: 10rem;
+}
+.root-quizlet-div button:not(:disabled):hover {
+  cursor: pointer;
+  border-color: #646cff;
+}
+.root-quizlet-div button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.root-quizlet-div .content-text {
+  min-width: 30rem;
+  min-height: 18rem;
+  resize: none;
+  font-family: sans-serif;
+  font-size: medium;
+  border-radius: 1rem;
+  border-width: 0.15rem;
+  background-color: rgb(56, 59, 61);
+  border: 0.1rem solid rgba(255, 0, 0, 0.397);
+  color: wheat;
+}
+
+.root-quizlet-div .content-text::placeholder {
+  color: rgba(245, 222, 179, 0.5);
+}
+
+.root-quizlet-div .content-text:focus {
+  outline: none;
+  border: 0.1rem solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 500px) {
+  .root-quizlet-div .content-text {
+    width: 90%; /* Adjust width for smaller screens */
+    min-width: 20rem; /* Adjust the minimum width */
+    min-height: 12rem; /* Adjust minimum height for smaller screens */
+  }
+}
+
+.root-quizlet-div .title-text {
+  resize: none;
+  font-family: sans-serif;
+  font-size: medium;
+  border-radius: 0.5rem;
+  border-width: 0.13rem;
+}
+
+.root-quizlet-div .content-text:focus {
+  border-width: 0.2rem;
+}
+
+.root-quizlet-div .generate-button {
+  background-color: rgb(53, 179, 238);
+  max-width: 15rem;
+}
+
+.root-quizlet-div .generate-button:not(:disabled):hover {
+  box-shadow: 2.5px 2.5px 2.5px rgba(231, 62, 56, 0.603);
+  background-color: rgba(53, 179, 238, 0.76);
+}
+
+.root-quizlet-div hr {
+  width: 30rem;
+  height: 0.5rem;
+  background-color: rgb(90, 195, 230);
+  border: none;
+  border-radius: 50px;
+}
+
+.root-quizlet-div input {
+  background-color: rgb(56, 59, 61);
+  border: 0.1rem solid rgba(255, 0, 0, 0.397);
+  color: wheat;
+}
+
+.root-quizlet-div input:focus {
+  outline: none;
+  border: 0.1rem solid rgba(255, 0, 0, 0.897);
+}
+
+.root-quizlet-div input::placeholder {
+  color: rgba(245, 222, 179, 0.452);
+}
