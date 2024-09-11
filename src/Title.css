@@ -1,0 +1,11 @@
+.title-root-div {
+  display: flex;
+  justify-content: center;
+}
+
+.title-root-div .title {
+  color: rgba(255, 255, 255, 0.726);
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-shadow: 0.25rem 0.25rem 0.25rem red;
+}

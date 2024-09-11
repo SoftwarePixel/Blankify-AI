@@ -1,0 +1,58 @@
+.header-root-div .main-div .selector-button {
+  width: 20rem;
+  height: 3rem;
+  background-color: rgba(57, 59, 61, 255);
+  border: none;
+}
+
+.header-root-div .main-div .selector-button:not(.selected):hover {
+  cursor: pointer;
+  border-bottom: 0.3rem solid rgba(255, 255, 255, 0.3);
+}
+
+.header-root-div .main-div .selected {
+  border-bottom: 0.3rem solid rgba(255, 255, 255, 1);
+}
+
+.header-root-div .main-div .selector-text {
+  margin-top: 0.9rem;
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+.header-root-div .main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-root-div .main-div .social-card {
+  display: flex;
+  flex-direction: row;
+  border: 0.1rem solid gray;
+  border-radius: 0.7rem;
+  max-width: 25rem;
+}
+
+.header-root-div .main-div .social-card:hover {
+  cursor: pointer;
+  border: 0.1rem solid white;
+}
+
+.header-root-div .main-div .type-text {
+  margin-top: 3.2rem;
+  margin-left: 1rem;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
+
+.header-root-div .main-div .social-icon {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
