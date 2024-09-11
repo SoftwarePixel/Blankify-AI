@@ -60,7 +60,7 @@ function Notes() {
       setPage("hide");
       generateButton.textContent = "Generating...";
       generateButton.setAttribute("disabled", "");
-      const resp = await fetch("http://localhost:5000/generate", {
+      const resp = await fetch("http://localhost:5000/generate_notes", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

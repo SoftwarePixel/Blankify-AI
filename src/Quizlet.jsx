@@ -2,6 +2,28 @@ import { useEffect, useState } from "react";
 import "./Quizlet.css";
 
 function Quizlet() {
+  let generateButton;
+  let titleField;
+  let contentField;
+  useEffect(() => {
+    generateButton = document.querySelector(".generate-button");
+    titleField = document.querySelector(".title-text");
+    contentField = document.querySelector(".content-text");
+  }, []);
+
+  async function handleSubmit(event) {
+    const resp = await fetch("http://localhost:5000/generate_quizlet", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: titleField.value,
+        content: contentField.value,
+      }),
+    });
+    const data = await resp.json();
+    console.log(data);
+  }
+
   return (
     <center>
       <div className="root-quizlet-div">
@@ -24,7 +46,9 @@ function Quizlet() {
           </span>
           <center>
             <p style={{ marginBottom: "1rem" }}></p>
-            <button className="generate-button">Generate Quizlet 🚀</button>
+            <button onClick={handleSubmit} className="generate-button">
+              Generate Quizlet 🚀
+            </button>
             <p></p>
           </center>
         </center>
