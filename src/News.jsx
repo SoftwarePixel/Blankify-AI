@@ -1,4 +1,3 @@
-import { LogarithmicScale } from "chart.js";
 import NewsComponent from "./NewsComponent";
 import "./News.css";
 
