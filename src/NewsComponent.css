@@ -1,0 +1,30 @@
+.news-component-root {
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.news-component-root .news-container {
+  border: 0.1rem solid rgba(255, 255, 255, 0.596);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 20rem;
+  max-width: 35rem;
+  min-height: 10rem;
+  margin-bottom: 2rem;
+}
+
+.news-component-root .news-container h1 {
+  color: rgb(3, 202, 202);
+  display: inline-block;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.news-component-root .news-container p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

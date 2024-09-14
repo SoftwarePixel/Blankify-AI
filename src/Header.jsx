@@ -18,9 +18,6 @@ function Header({ setShownComponent }) {
   return (
     <div className="header-root-div">
       <div className="main-div">
-        <button onClick={handleClick} id="quizlet" className="selector-button">
-          <p className="selector-text">Instant Quizlet</p>
-        </button>
         <button onClick={handleClick} id="notes" className="selector-button">
           <p className="selector-text">Instant Notes</p>
         </button>

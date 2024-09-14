@@ -2,7 +2,8 @@
   width: 20rem;
   height: 3rem;
   background-color: rgba(57, 59, 61, 255);
-  border: none;
+  border: 0rem solid rgba(255, 255, 255, 0.3);
+  transition: border-bottom 0.3s ease;
 }
 
 .header-root-div .main-div .selector-button:not(.selected):hover {
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  user-select: none;
 }
 
 .header-root-div .main-div .social-card {
