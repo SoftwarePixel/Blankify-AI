@@ -80,6 +80,7 @@ function Notes() {
 
   return (
     <center>
+      <div style={{ paddingTop: "14rem" }}></div>
       <div className="root-notes-div">
         <center>
           <h1>Instant Notes 📝</h1>

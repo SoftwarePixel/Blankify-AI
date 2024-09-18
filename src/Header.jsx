@@ -18,16 +18,24 @@ function Header({ setShownComponent }) {
   return (
     <div className="header-root-div">
       <div className="main-div">
-        <button onClick={handleClick} id="notes" className="selector-button">
-          <p className="selector-text">Instant Notes</p>
-        </button>
-        <button onClick={handleClick} id="news" className="selector-button">
-          <p className="selector-text">News</p>
-        </button>
+        <center>
+          <h1 className="title">Blankify AI</h1>
+        </center>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+          <button onClick={handleClick} id="notes" className="selector-button">
+            <p className="selector-text">Instant Notes</p>
+          </button>
+          <button onClick={handleClick} id="news" className="selector-button">
+            <p className="selector-text">News</p>
+          </button>
+        </div>
       </div>
-      <center>
-        <p style={{ marginBottom: "3rem" }}></p>
-      </center>
     </div>
   );
 }

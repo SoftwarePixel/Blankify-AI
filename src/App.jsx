@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./Header";
-import Title from "./Title";
 import Notes from "./Notes";
 import Quizlet from "./Quizlet";
 import News from "./News";
@@ -24,7 +23,6 @@ function App() {
   return (
     <>
       <div>
-        <Title />
         <Header setShownComponent={handleDataFromChild} />
         {currentComponent}
       </div>

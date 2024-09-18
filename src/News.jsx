@@ -4,6 +4,7 @@ import "./News.css";
 function News() {
   return (
     <div className="news-root">
+      <div style={{ paddingTop: "14rem" }}></div>
       <center>
         <NewsComponent title={"Changelog"} items={["Initial release 1.0.0"]} />
         <NewsComponent
