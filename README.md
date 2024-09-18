@@ -1,3 +1,3 @@
-# CHS Tools
+# Blankify AI
 
-A fun project developed for teachers and students. A collection of tools designed to make your life easier!
+A project developed for teachers and students, designed to make life easier by using AI to create fill-in notes.
